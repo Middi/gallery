@@ -1,0 +1,127 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--------------------------------------*            ADDED BY RICHARD
+\*--------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+/*  ---- COLORS ---- */
+p {
+  font-family: "Open Sans";
+  font-size: 0.8em;
+  font-weight: 600; }
+
+/* ----- BUTTONS ----- */
+#my-btn {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #db4534;
+  padding: 8px 22px;
+  line-height: 70px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 #dbdbdb, 0 6px 20px 0 #dbdbdb;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
+#my-btn:hover {
+  background-color: #FF2910;
+  box-shadow: 0 6px 10px 0 #dbdbdb, 0 8px 16px 0 #dbdbdb; }
+
+.card {
+  max-width: 220px;
+  max-height: 280px;
+  overflow: hidden;
+  background-color: white;
+  margin: 6px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 #dbdbdb, 0 6px 20px 0 #dbdbdb; }
+  .card img {
+    width: 100%;
+    height: auto; }
+
+.card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  z-index: 10;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.description {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  background-color: white; }
+  .description img {
+    width: 20px;
+    display: inline; }
+  .description p {
+    display: inline; }
+
+body {
+  background: #f3f5f6; }
+
+header {
+  height: 50px;
+  width: 100%;
+  background: #1f2022;
+  border-top: 4px solid #d7722d;
+  box-shadow: 0 6px 10px -6px #999; }
+
+.content {
+  margin: 100px auto;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+/*
+ MEDIA QUERIES
+*/
+/* -- BREAK 1 -- */
+/* -- BREAK 2 -- */
+/* -- BREAK 3 -- */
+/*# sourceMappingURL=stylesheet.css.map */

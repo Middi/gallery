@@ -1,0 +1,29 @@
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "buttons";
+@import "cards";
+
+body {
+    background: $background;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background: $nav;
+    border-top: 4px solid $brand;
+    box-shadow: 0 6px 10px -6px #999;
+}
+
+.content {
+    margin: 100px auto;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+@import "media-queries";

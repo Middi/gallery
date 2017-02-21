@@ -1,0 +1,39 @@
+.card {
+    max-width: 220px;
+    max-height: 280px;
+    overflow: hidden;
+    background-color: white;
+    margin: 6px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 $shadow, 0 6px 20px 0 $shadow;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card:hover {
+
+  transform: scale(1.04);
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.description {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+
+  img {
+    width: 20px;
+    display: inline;
+  }
+  p {
+    display: inline;
+  }
+}

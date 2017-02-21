@@ -3,6 +3,7 @@
 @import "typography";
 @import "buttons";
 @import "cards";
+@import "tags";
 
 body {
     background: $background;
@@ -13,8 +14,8 @@ header {
     width: 100%;
     background: $nav;
     border-top: 3px solid $brand;
-    border-bottom: 1px solid #aaa;
-    box-shadow: 0 9px 10px -9px #999;
+    border-bottom: 1px solid #bbb;
+    box-shadow: 0 2px 6px -4px #999;
     position: fixed;
     top: 0;
     z-index: 100;

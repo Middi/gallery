@@ -43,16 +43,28 @@ a {
 
 p {
   font-family: "Open Sans";
-  font-size: 0.7em;
+  font-size: 0.75em;
+  line-height: 1.2;
   font-weight: 300; }
 
 h1 {
   font-size: 1.5em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: white; }
+  color: #000; }
   h1 span {
     font-weight: 700; }
+
+.tag {
+  color: white;
+  font-size: 0.5em;
+  background-color: #FF2910;
+  padding: 2px 6px;
+  font-weight: 400;
+  border-radius: 6px; }
+
+.blue {
+  background-color: #1029FF; }
 
 i {
   font-size: 12px;
@@ -114,7 +126,7 @@ a:hover {
     display: inline; }
   .card-footer .description {
     display: block;
-    margin-top: 6px; }
+    margin: 6px 0; }
   .card-footer .username {
     font-family: "Open Sans";
     font-size: 0.75em;
@@ -133,9 +145,13 @@ body {
 header {
   height: 50px;
   width: 100%;
-  background: #1f2022;
-  border-top: 4px solid #d7722d;
-  box-shadow: 0 9px 18px -6px #666; }
+  background: #efefef;
+  border-top: 3px solid #d7722d;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 9px 10px -9px #999;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
 
 nav {
   max-width: 960px;
@@ -164,7 +180,7 @@ nav {
     height: 100%; }
 
 .content {
-  margin: 100px auto;
+  margin: 150px auto;
   max-width: 960px;
   display: -webkit-box;
   display: -ms-flexbox;

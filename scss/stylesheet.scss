@@ -12,8 +12,12 @@ header {
     height: 50px;
     width: 100%;
     background: $nav;
-    border-top: 4px solid $brand;
-    box-shadow: 0 9px 18px -6px #666;
+    border-top: 3px solid $brand;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0 9px 10px -9px #999;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
@@ -38,7 +42,7 @@ nav {
 }
 
 .content {
-    margin: 100px auto;
+    margin: 150px auto;
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +61,7 @@ main:after {display: block;}
 footer, main:after {height: 32px;}
 
 footer {
-    background: $nav;
+    background: $footer;
     display: table;
     width: 100%;
     text-align: center;

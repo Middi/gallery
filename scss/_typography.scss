@@ -6,7 +6,8 @@
 
 p {
   font-family: "Open Sans";
-  font-size: 0.7em;
+  font-size: 0.75em;
+  line-height: 1.2;
   font-weight: 300;
 }
 
@@ -14,12 +15,24 @@ h1 {
   font-size: 1.5em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: white;
+  color: #000;
   span {
     font-weight: 700;
   }
 }
 
+.tag {
+  color: white;
+  font-size: 0.5em;
+  background-color: #FF2910;
+  padding: 2px 6px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+.blue {
+  background-color: #1029FF;
+}
 
 i {
   font-size: 12px;

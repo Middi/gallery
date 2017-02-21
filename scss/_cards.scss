@@ -14,12 +14,7 @@
     }
 }
 
-.card:hover {
 
-  transform: scale(1.04);
-  z-index: 10;
-  transition: all 0.5s ease;
-}
 
 .card-footer {
   height: auto;
@@ -31,9 +26,8 @@
     width: 20px;
     display: inline;
   }
-  p {
-    display: inline;
-  }
+
+  p { display: inline; }
 
   .description {
     display: block;
@@ -45,6 +39,10 @@
     font-size: 0.75em;
     font-weight: 500;
   }
+}
 
-
+.card:hover {
+  transform: scale(1.04);
+  z-index: 10;
+  transition: all 0.5s ease;
 }

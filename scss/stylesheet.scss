@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-    width: 960px;
+    max-width: 960px;
     height: 46px;
     margin: 0 auto;
     padding: 0 26px;
@@ -34,9 +34,7 @@ nav {
     vertical-align: middle;
     align-self: center;
 
-    img {
-        height: 100%;
-    }
+    img { height: 100%; }
 }
 
 .content {
@@ -54,14 +52,9 @@ main {
     margin-bottom: -32px;
 }
 
-main:after {
-    display: block;
-}
+main:after {display: block;}
 
-footer,
-main:after {
-    height: 32px;
-}
+footer, main:after {height: 32px;}
 
 footer {
     background: $nav;

@@ -1,7 +1,17 @@
-
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 p {
   font-family: "Open Sans";
-  font-size: 0.8em;
-  font-weight: 600;
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+.username {
+  font-family: "Open Sans";
+  font-size: 0.75em;
+  font-weight: 500;
 }

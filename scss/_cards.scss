@@ -1,7 +1,5 @@
 .card {
     max-width: 220px;
-    max-height: 280px;
-    overflow: hidden;
     background-color: white;
     margin: 6px;
     border: 1px solid #ddd;
@@ -23,8 +21,8 @@
   transition: all 0.5s ease;
 }
 
-.description {
-  height: 80px;
+.card-footer {
+  height: auto;
   width: 100%;
   padding: 10px;
   background-color: white;
@@ -36,4 +34,10 @@
   p {
     display: inline;
   }
+
+  .description {
+    display: block;
+    margin-top: 6px;
+  }
+
 }

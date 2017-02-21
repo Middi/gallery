@@ -36,10 +36,20 @@ a {
   text-decoration: none; }
 
 /*  ---- COLORS ---- */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 p {
   font-family: "Open Sans";
-  font-size: 0.8em;
-  font-weight: 600; }
+  font-size: 0.7em;
+  font-weight: 300; }
+
+.username {
+  font-family: "Open Sans";
+  font-size: 0.75em;
+  font-weight: 500; }
 
 /* ----- BUTTONS ----- */
 #my-btn {
@@ -63,8 +73,6 @@ p {
 
 .card {
   max-width: 220px;
-  max-height: 280px;
-  overflow: hidden;
   background-color: white;
   margin: 6px;
   border: 1px solid #ddd;
@@ -83,16 +91,19 @@ p {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-.description {
-  height: 80px;
+.card-footer {
+  height: auto;
   width: 100%;
   padding: 10px;
   background-color: white; }
-  .description img {
+  .card-footer img {
     width: 20px;
     display: inline; }
-  .description p {
+  .card-footer p {
     display: inline; }
+  .card-footer .description {
+    display: block;
+    margin-top: 6px; }
 
 body {
   background: #f3f5f6; }

@@ -13,7 +13,30 @@ header {
     width: 100%;
     background: $nav;
     border-top: 4px solid $brand;
-    box-shadow: 0 6px 10px -6px #999;
+    box-shadow: 0 9px 18px -6px #666;
+}
+
+nav {
+    width: 960px;
+    height: 46px;
+    margin: 0 auto;
+    padding: 0 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    align-self: center;
+}
+
+.login {
+    height: 30px;
+    vertical-align: middle;
+    align-self: center;
+
+    img {
+        height: 100%;
+    }
 }
 
 .content {
@@ -23,7 +46,33 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    clear: both;
 }
 
+main {
+    min-height: 100%;
+    margin-bottom: -32px;
+}
+
+main:after {
+    display: block;
+}
+
+footer,
+main:after {
+    height: 32px;
+}
+
+footer {
+    background: $nav;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.built {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 @import "media-queries";

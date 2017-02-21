@@ -46,10 +46,28 @@ p {
   font-size: 0.7em;
   font-weight: 300; }
 
-.username {
+h1 {
+  font-size: 1.5em;
   font-family: "Open Sans";
-  font-size: 0.75em;
-  font-weight: 500; }
+  font-weight: 200;
+  color: white; }
+  h1 span {
+    font-weight: 700; }
+
+i {
+  font-size: 12px;
+  color: #FF2910; }
+
+.built, a {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
+a:hover {
+  text-decoration: underline; }
 
 /* ----- BUTTONS ----- */
 #my-btn {
@@ -62,14 +80,14 @@ p {
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   border-radius: 6px;
-  box-shadow: 0 4px 8px 0 #dbdbdb, 0 6px 20px 0 #dbdbdb;
+  box-shadow: 0 4px 8px 0 #c7c7c7, 0 6px 20px 0 #c7c7c7;
   cursor: pointer;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease; }
 
 #my-btn:hover {
   background-color: #FF2910;
-  box-shadow: 0 6px 10px 0 #dbdbdb, 0 8px 16px 0 #dbdbdb; }
+  box-shadow: 0 6px 10px 0 #c7c7c7, 0 8px 16px 0 #c7c7c7; }
 
 .card {
   max-width: 220px;
@@ -79,7 +97,7 @@ p {
   border-radius: 2px;
   z-index: 1;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 #dbdbdb, 0 6px 20px 0 #dbdbdb; }
+  box-shadow: 0 4px 8px 0 #c7c7c7, 0 6px 16px 0 #c7c7c7; }
   .card img {
     width: 100%;
     height: auto; }
@@ -104,6 +122,10 @@ p {
   .card-footer .description {
     display: block;
     margin-top: 6px; }
+  .card-footer .username {
+    font-family: "Open Sans";
+    font-size: 0.75em;
+    font-weight: 500; }
 
 body {
   background: #f3f5f6; }
@@ -113,7 +135,33 @@ header {
   width: 100%;
   background: #1f2022;
   border-top: 4px solid #d7722d;
-  box-shadow: 0 6px 10px -6px #999; }
+  box-shadow: 0 9px 18px -6px #666; }
+
+nav {
+  width: 960px;
+  height: 46px;
+  margin: 0 auto;
+  padding: 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+
+.login {
+  height: 30px;
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+  .login img {
+    height: 100%; }
 
 .content {
   margin: 100px auto;
@@ -127,7 +175,29 @@ header {
       justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  clear: both; }
+
+main {
+  min-height: 100%;
+  margin-bottom: -32px; }
+
+main:after {
+  display: block; }
+
+footer,
+main:after {
+  height: 32px; }
+
+footer {
+  background: #1f2022;
+  display: table;
+  width: 100%;
+  text-align: center; }
+
+.built {
+  display: table-cell;
+  vertical-align: middle; }
 
 /*
  MEDIA QUERIES

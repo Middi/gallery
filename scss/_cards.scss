@@ -6,7 +6,7 @@
     border-radius: 2px;
     z-index: 1;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 $shadow, 0 6px 20px 0 $shadow;
+    box-shadow: 0 4px 8px 0 $shadow, 0 6px 16px 0 $shadow;
 
     img {
         width: 100%;
@@ -39,5 +39,12 @@
     display: block;
     margin-top: 6px;
   }
+
+  .username {
+    font-family: "Open Sans";
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+
 
 }

@@ -9,6 +9,24 @@
 	],
 "creatorBuild": "25568",
 "files": {
+	"\/assets\/close.png": {
+		"ft": 32768,
+		"iS": 431,
+		"oA": 0,
+		"oAP": "\/assets\/close.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/main-min.js": {
 		"ft": 64,
 		"mi": 1,

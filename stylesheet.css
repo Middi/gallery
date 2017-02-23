@@ -56,7 +56,9 @@ h1 {
   h1 span {
     font-weight: 700; }
 
-a, .built, strong {
+.built,
+a,
+strong {
   padding: 0;
   margin: 0;
   color: white;
@@ -67,9 +69,12 @@ a, .built, strong {
 a:hover {
   text-decoration: underline; }
 
-i {
+.fa-heart {
   font-size: 12px;
   color: #fc2d23; }
+
+.fa-times {
+  color: #c8c8c8; }
 
 /* ----- BUTTONS ----- */
 #my-btn {
@@ -270,6 +275,45 @@ main:after {
       -ms-flex-align: start;
           align-items: flex-start;
   clear: both; }
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  display: none; }
+
+.modal.closed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.modal-bg {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  opacity: 0.85;
+  z-index: 101; }
+
+.close-button {
+  position: inherit;
+  top: 16px;
+  right: 20px;
+  z-index: 102; }
+
+.modal-main {
+  position: inherit;
+  width: 960px;
+  max-width: 90%;
+  height: 550px;
+  max-height: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 1.0;
+  z-index: 102; }
 
 footer, main:after {
   height: 32px; }

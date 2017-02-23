@@ -4,6 +4,7 @@
 @import "buttons";
 @import "cards";
 @import "tags";
+@import "media-queries";
 
 body {
     background: $background;
@@ -20,6 +21,8 @@ header {
     z-index: 100;
 }
 
+// --- COLOURED BORDER TOP NAV --- //
+
 ul {
   width: 100%;
   display: flex;
@@ -27,7 +30,6 @@ ul {
     margin: 0;
     box-sizing: border-box;
 }
-
 
 li {
   height: 4px;
@@ -38,29 +40,20 @@ li {
   display: inline-block;
 }
 
-li:nth-child(1) {
-  background-color: $red500;
-}
+li:nth-child(1) {background-color: $red500;}
 
-li:nth-child(2) {
-  background-color: $blue500;
-}
+li:nth-child(2) {background-color: $blue500;}
 
-li:nth-child(3) {
-  background-color: $green500;
-}
+li:nth-child(3) {background-color: $green500;}
 
-li:nth-child(4) {
-  background-color: $orange500;
-}
+li:nth-child(4) {background-color: $orange500;}
 
-li:nth-child(5) {
-  background-color: $purple500;
-}
+li:nth-child(5) {background-color: $purple500;}
 
-li:nth-child(6) {
-  background-color: $yellow500;
-}
+li:nth-child(6) { background-color: $yellow500;}
+
+
+// --- NAV INNER --- //
 
 nav {
     max-width: 960px;
@@ -71,9 +64,7 @@ nav {
     justify-content: space-between;
 }
 
-.logo {
-    align-self: center;
-}
+.logo {align-self: center;}
 
 .login {
     height: 30px;
@@ -82,6 +73,16 @@ nav {
 
     img { height: 100%; }
 }
+
+
+// --- CONTENT AREA --- //
+
+main {
+    min-height: 100%;
+    margin-bottom: -32px;
+}
+
+main:after {display: block;}
 
 .content {
     margin: 150px auto;
@@ -93,13 +94,21 @@ nav {
     clear: both;
 }
 
-main {
-    min-height: 100%;
-    margin-bottom: -32px;
-}
 
-main:after {display: block;}
+// --- MODAL --- //
 
+// .modal {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   z-index: 100;
+//   background-color: black;
+//   opacity: 0.85;
+// }
+
+
+// --- FOOTER --- //
 footer, main:after {height: 32px;}
 
 footer {
@@ -113,5 +122,3 @@ footer {
   display: table-cell;
   vertical-align: middle;
 }
-
-@import "media-queries";

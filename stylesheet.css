@@ -169,6 +169,12 @@ i {
 .orange:hover {
   background-color: #ff9b0b; }
 
+/*
+ MEDIA QUERIES
+*/
+/* -- BREAK 1 -- */
+/* -- BREAK 2 -- */
+/* -- BREAK 3 -- */
 body {
   background: #f3f5f6; }
 
@@ -243,6 +249,13 @@ nav {
   .login img {
     height: 100%; }
 
+main {
+  min-height: 100%;
+  margin-bottom: -32px; }
+
+main:after {
+  display: block; }
+
 .content {
   margin: 150px auto;
   max-width: 960px;
@@ -258,13 +271,6 @@ nav {
           align-items: flex-start;
   clear: both; }
 
-main {
-  min-height: 100%;
-  margin-bottom: -32px; }
-
-main:after {
-  display: block; }
-
 footer, main:after {
   height: 32px; }
 
@@ -277,11 +283,4 @@ footer {
 .built {
   display: table-cell;
   vertical-align: middle; }
-
-/*
- MEDIA QUERIES
-*/
-/* -- BREAK 1 -- */
-/* -- BREAK 2 -- */
-/* -- BREAK 3 -- */
 /*# sourceMappingURL=stylesheet.css.map */

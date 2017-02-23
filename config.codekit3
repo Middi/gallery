@@ -7,8 +7,17 @@
 		"uuidString": "73217B1A-1B43-4AE7-AFB8-D571FE1F8DC7"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
+	"\/assets\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/images\/2.jpg": {
 		"ft": 16384,
 		"iS": 5670816,
@@ -1104,6 +1113,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -1432,6 +1445,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -1525,6 +1542,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},

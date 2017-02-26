@@ -4,9 +4,14 @@
 /* -- BREAK 1 -- */
 @media only screen and (max-width: 465px) {
 
-
 .card {
-    max-width: 360px;
+    max-width: 465px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: none;
 }
 
 }

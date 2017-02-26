@@ -178,6 +178,10 @@ a:hover {
  MEDIA QUERIES
 */
 /* -- BREAK 1 -- */
+@media only screen and (max-width: 465px) {
+  .card {
+    max-width: 360px; } }
+
 /* -- BREAK 2 -- */
 /* -- BREAK 3 -- */
 body {

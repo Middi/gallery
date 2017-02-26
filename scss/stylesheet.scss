@@ -124,16 +124,22 @@ main:after {display: block;}
 
 .modal-main {
   position: inherit;
-  width: 960px;
+  width: auto;
   max-width: 90%;
-  height: 550px;
+  height: auto;
   max-height: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
   opacity: 1.0;
   z-index: 102;
+}
+
+#img-modal {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 

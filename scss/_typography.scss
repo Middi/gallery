@@ -24,7 +24,19 @@ h1 {
     }
 }
 
-.built,
+h2 {
+    font-size: 1.2em;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: $black;
+    padding: 8px 0 2px;
+}
+
+a {
+    font-size: 1em;
+}
+
+.built
 a,
 strong {
     padding: 0;

@@ -57,7 +57,17 @@ h1 {
   h1 span {
     font-weight: 700; }
 
-.built,
+h2 {
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #333333;
+  padding: 8px 0 2px; }
+
+a {
+  font-size: 1em; }
+
+.built
 a,
 strong {
   padding: 0;
@@ -368,11 +378,39 @@ main {
 main:after {
   display: block; }
 
+section {
+  width: 100%;
+  height: 350px;
+  background-image: url("images/7.jpg");
+  background-size: cover;
+  background-position: 0 -140px;
+  background-repeat: no-repeat;
+  clear: both; }
+
+.user {
+  display: block;
+  max-width: 960px;
+  position: absolute;
+  text-align: center;
+  top: 362px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 16px;
+  background-image: url("images/avatar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 4px solid white; }
+
 .top-tools {
   margin: 100px auto 40px;
   padding: 10px;
-  max-width: 960px;
-  clear: both; }
+  max-width: 960px; }
 
 .content {
   margin: 20px auto 140px;

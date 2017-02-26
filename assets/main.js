@@ -1,38 +1,46 @@
+function detectmob() {
+  if (window.innerWidth <= 465) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
 // MODAL
 
-// Grab from DOM
-var modal = document.querySelector(".modal");
-var modalBg = document.querySelector(".modal-bg");
-var closeButton = document.querySelector(".close-button");
-var closeBg = document.querySelector(".modal-bg");
-var openImg = document.getElementsByClassName("open-img");
+if (!detectmob()) {
 
-// Event listeners
-closeButton.addEventListener("click", function () {
-  modal.classList.toggle("closed");
-  modalBg.classList.toggle("closed");
-});
+  // Grab from DOM
+  var modal = document.querySelector(".modal");
+  var modalBg = document.querySelector(".modal-bg");
+  var closeButton = document.querySelector(".close-button");
+  var closeBg = document.querySelector(".modal-bg");
+  var openImg = document.getElementsByClassName("open-img");
 
-closeBg.addEventListener("click", function () {
-  modal.classList.toggle("closed");
-  modalBg.classList.toggle("closed");
-});
-
-// Iterate through and add event listeners to open-img
-for (var i = 0; i < openImg.length; i++) {
-  openImg[i].addEventListener('click', function (e) {
-
-    console.log(e.target);
-    
-    document.getElementById('img-modal').src = e.target.src;
-
-
+  // Event listeners
+  closeButton.addEventListener("click", function () {
     modal.classList.toggle("closed");
     modalBg.classList.toggle("closed");
   });
+
+  closeBg.addEventListener("click", function () {
+    modal.classList.toggle("closed");
+    modalBg.classList.toggle("closed");
+  });
+
+  // Iterate through and add event listeners to open-img
+  for (var i = 0; i < openImg.length; i++) {
+    openImg[i].addEventListener('click', function (e) {
+
+
+
+
+      document.getElementById('img-modal').src = e.target.src;
+
+
+      modal.classList.toggle("closed");
+      modalBg.classList.toggle("closed");
+    });
+  }
 }
-
-// Get image from card
-
-// set it to Modal image
-

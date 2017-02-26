@@ -4,18 +4,16 @@
 /* -- BREAK 1 -- */
 @media only screen and (max-width: 465px) {
 
+header li {height: 2px;}
+
 .card {
+    width: 100%;
+    border: none;
     max-width: 465px;
     margin: 0;
     margin-bottom: 20px;
 }
 
-.card:hover {
-  transform: none;
-}
+.card:hover {transform: none;}
 
 }
-
-/* -- BREAK 2 -- */
-
-/* -- BREAK 3 -- */

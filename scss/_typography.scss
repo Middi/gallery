@@ -3,6 +3,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $black;
+    font-family: "Open Sans";
 }
 
 p {
@@ -43,3 +44,8 @@ a:hover {
 }
 
 .fa-times {color: $close;}
+
+
+.dropdown-text {
+
+}

@@ -6,200 +6,198 @@
 @import "tags";
 @import "topbar";
 @import "media-queries";
-
-
 body {
-    background: $background;
+    background         : $background;
 }
 
 header {
-    height: 56px;
-    width: 100%;
-    background: $nav;
-    border-bottom: 1px solid #bbb;
-    box-shadow: 0 2px 6px -4px #999;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+    height             : 56px;
+    width              : 100%;
+    background         : $nav;
+    border-bottom      : 1px solid #bbb;
+    box-shadow         : 0 2px 6px -4px #999;
+    position           : fixed;
+    top                : 0;
+    z-index            : 10;
 }
 
 // --- COLOURED BORDER TOP NAV --- //
 header ul {
-    width: 100%;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    width              : 100%;
+    display            : flex;
+    padding            : 0;
+    margin             : 0;
+    box-sizing         : border-box;
 }
 
 header li {
-    height: 4px;
-    border: none;
-    padding: 0;
-    margin: 0;
-    width: 16.6666%;
-    display: inline-block;
+    height             : 4px;
+    border             : none;
+    padding            : 0;
+    margin             : 0;
+    width              : 16.6666%;
+    display            : inline-block;
 }
 
-header li:nth-child(1) {
-    background-color: $red500;
+header li              : nth-child(1) {
+    background-color   : $red500;
 }
 
-header li:nth-child(2) {
-    background-color: $blue500;
+header li              : nth-child(2) {
+    background-color   : $blue500;
 }
 
-header li:nth-child(3) {
-    background-color: $green500;
+header li              : nth-child(3) {
+    background-color   : $green500;
 }
 
-header li:nth-child(4) {
-    background-color: $orange500;
+header li              : nth-child(4) {
+    background-color   : $orange500;
 }
 
-header li:nth-child(5) {
-    background-color: $purple500;
+header li              : nth-child(5) {
+    background-color   : $purple500;
 }
 
-header li:nth-child(6) {
-    background-color: $yellow500;
+header li              : nth-child(6) {
+    background-color   : $yellow500;
 }
 
 // --- NAV INNER --- //
 nav {
-    max-width: 960px;
-    height: 52px;
-    margin: 0 auto;
-    padding: 0 26px;
-    display: flex;
-    justify-content: space-between;
+    max-width          : 960px;
+    height             : 52px;
+    margin             : 0 auto;
+    padding            : 0 26px;
+    display            : flex;
+    justify-content    : space-between;
 }
 
 .logo {
-    align-self: center;
+    align-self         : center;
 }
 
 .login {
-    height: 30px;
-    vertical-align: middle;
-    align-self: center;
+    height             : 30px;
+    vertical-align     : middle;
+    align-self         : center;
     img {
-        height: 100%;
+        height         : 100%;
     }
 }
 
 // --- CONTENT AREA --- //
 main {
-    min-height: 100%;
-    margin-bottom: -32px;
+    min-height         : 100%;
+    margin-bottom      : -32px;
 }
 
 main:after {
-    display: block;
+    display            : block;
 }
 
 section {
-    width: 100%;
-    height: 350px;
-    background-image: url('images/7.jpg');
-    background-size: cover;
+    width              : 100%;
+    height             : 350px;
+    background-image   : url('images/7.jpg');
+    background-size    : cover;
     background-position: 0 -140px;
-    background-repeat: no-repeat;
-    clear: both;
+    background-repeat  : no-repeat;
+    clear              : both;
 }
 
 .user {
-    display: block;
-    max-width: 960px;
-    position: absolute;
-    text-align: center;
-    top: 362px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display            : block;
+    max-width          : 960px;
+    position           : absolute;
+    text-align         : center;
+    top                : 362px;
+    left               : 50%;
+    transform          : translate(-50%, -50%);
 }
-.avatar-user {
-    width: 120px;
-    height: 120px;
-    margin: 0 18px;
-    background-image: url('images/avatar.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    border: 4px solid white;
 
+.avatar-user {
+    width              : 120px;
+    height             : 120px;
+    margin             : 0 18px;
+    background-image   : url('images/avatar.png');
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    border-radius      : 50%;
+    border             : 4px solid white;
 }
 
 .top-tools {
-    margin: 100px auto 40px;
-    padding: 10px;
-    max-width: 960px;
+    margin             : 100px auto 40px;
+    padding            : 10px;
+    max-width          : 960px;
 }
 
 .content {
-    margin: 20px auto 140px;
-    max-width: 960px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    clear: both;
+    margin             : 20px auto 140px;
+    max-width          : 960px;
+    display            : flex;
+    flex-wrap          : wrap;
+    justify-content    : space-around;
+    align-items        : flex-start;
+    clear              : both;
 }
 
 // --- MODAL --- //
 .modal {
-    position: fixed;
-    z-index: 100;
-    display: none;
+    position           : fixed;
+    z-index            : 100;
+    display            : none;
 }
 
 .modal.closed {
-    display: flex;
+    display            : flex;
 }
 
 .modal-bg {
-    position: inherit;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: black;
-    opacity: 0.85;
-    z-index: 101;
+    position           : inherit;
+    width              : 100%;
+    height             : 100%;
+    top                : 0;
+    background-color   : black;
+    opacity            : 0.85;
+    z-index            : 101;
 }
 
 .close-button {
-    position: inherit;
-    top: 16px;
-    right: 20px;
-    z-index: 102;
+    position           : inherit;
+    top                : 16px;
+    right              : 20px;
+    z-index            : 102;
 }
 
 .modal-main {
-    position: inherit;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 102;
+    position           : inherit;
+    top                : 50%;
+    left               : 50%;
+    transform          : translate(-50%, -50%);
+    z-index            : 102;
 }
 
 #img-modal {
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width          : 90vw;
+    max-height         : 90vh;
 }
 
 // --- FOOTER --- //
 footer,
 main:after {
-    height: 32px;
+    height             : 32px;
 }
 
 footer {
-    background: $footer;
-    display: table;
-    width: 100%;
-    text-align: center;
+    background         : $footer;
+    display            : table;
+    width              : 100%;
+    text-align         : center;
 }
 
 .built {
-    display: table-cell;
-    vertical-align: middle;
+    display            : table-cell;
+    vertical-align     : middle;
 }

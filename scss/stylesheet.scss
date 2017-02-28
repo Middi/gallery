@@ -39,27 +39,27 @@ header li {
     display            : inline-block;
 }
 
-header li              : nth-child(1) {
+header li:nth-child(1) {
     background-color   : $red500;
 }
 
-header li              : nth-child(2) {
+header li:nth-child(2) {
     background-color   : $blue500;
 }
 
-header li              : nth-child(3) {
+header li:nth-child(3) {
     background-color   : $green500;
 }
 
-header li              : nth-child(4) {
+header li:nth-child(4) {
     background-color   : $orange500;
 }
 
-header li              : nth-child(5) {
+header li:nth-child(5) {
     background-color   : $purple500;
 }
 
-header li              : nth-child(6) {
+header li:nth-child(6) {
     background-color   : $yellow500;
 }
 
